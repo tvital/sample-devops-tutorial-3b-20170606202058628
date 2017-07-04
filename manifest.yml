@@ -1,7 +1,7 @@
 applications:
 - disk_quota: 1024M
-  host: sample-devops-tutorial-3b-20170606202058628
-  name: sample-devops-tutorial-3b-20170606202058628
+  host: simple-toolchain-20170704134528602
+  name: simple-toolchain-20170704134528602
   command: node app.js
   path: .
   instances: 1
