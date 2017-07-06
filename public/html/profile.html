@@ -19,6 +19,10 @@
 	
 	  ga('create', 'UA-102161142-1', 'auto');
 	  ga('send', 'pageview');
+	  
+	  function evento () {
+	  	ga('send', "event", 'define-skills', 'click');
+	  }
 	</script>  
 
 </head>
@@ -48,7 +52,7 @@
     </div>
     <footer class="footer-btn">
 			<div class="wrap-btn">
-				<a href="skills.html" class="main-btn">Define Skills</button>
+				<a href="skills.html" onclick="evento()" class="main-btn">Define Skills</button>
 			</div>
 	</footer>
 </body>
