@@ -176,4 +176,14 @@ html, body {
 	font-family: "Helvetica", arial, sans-serif;
 	background-color: #fff;
 	padding: 30px;
+	color: #000;
+	height: 100vh;
+}
+
+.app-header {
+	width: 100%
+	background-color: #047cc0;
+	color: #fff;
+	padding: 5px;
+	height: 50px;
 }
