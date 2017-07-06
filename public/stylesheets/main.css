@@ -192,12 +192,14 @@ html, body {
 }
 
 .footer-btn {
-	position: absolute;
-	bottom: 0px;
-	height: 80px;
-	background-color: #deedf7;
-	margin: auto;
-	width: 100%;
+	position: fixed;
+    bottom: 0px;
+    height: 80px;
+    background-color: #deedf7;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
 }
 
 .footer-btn .wrap-btn {
