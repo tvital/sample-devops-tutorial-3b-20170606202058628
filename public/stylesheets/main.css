@@ -178,12 +178,34 @@ html, body {
 	padding: 30px;
 	color: #000;
 	height: 100vh;
+	position: relative;
 }
 
 .app-header {
-	width: 100%
-	background-color: #047cc0;
-	color: #fff;
-	padding: 5px;
-	height: 50px;
+    width: 100%;
+    background-color: #047cc0;
+    color: #fff;
+    padding: 15px;
+    height: 50px;
+    box-sizing: border-box;
 }
+
+.footer-btn {
+	position: absolute;
+	bottom: 0px;
+	height: 80px;
+	background-color: #deedf7;
+	margin: auto;
+	width: 100%;
+}
+
+.footer-btn .main-btn {
+    background-color: #047cc0;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
