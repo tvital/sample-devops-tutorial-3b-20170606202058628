@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <title>Career Star</title>
+
+    <!-- CSS imports -->
+    <link rel="stylesheet" type="text/css" href="../stylesheets/main.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/normalize.css">
+
+
+	<script type="text/javascript">
+				$(document).ready(function(){
+				    // Defining the local dataset
+				    var interests = ['Bootstrap', 'Java', 'Node.js', 'Management', 'Design'];
+				    
+				    // Constructing the suggestion engine
+				    var interests = new Bloodhound({
+				        datumTokenizer: Bloodhound.tokenizers.whitespace,
+				        queryTokenizer: Bloodhound.tokenizers.whitespace,
+				        local: interests
+				    });
+				    
+				    // Initializing the typeahead
+				    $('.typeahead').typeahead({
+				        hint: true,
+				        highlight: true, /* Enable substring highlighting */
+				        minLength: 1 /* Specify minimum characters required for showing suggestions */
+				    },
+				    {
+				        name: 'interests',
+				        source: interests
+				    });
+				});  
+			</script>
+</head>
+<body>
+	<div class="app-header">Career Star</div>
+    <div class="main">
+		<div>
+			<h1 class="name">Interests</h1>
+			
+			<ol>
+			  <a href="#">Profile</a>/<a href="#">Skills</a>/<a class="active">Interests</a>
+			</ol>
+			<input type="text" placeholder="Type interest">
+			No Results were found
+			
+		</div>
+		
+	</div>
+	
+</body>
+</html>
