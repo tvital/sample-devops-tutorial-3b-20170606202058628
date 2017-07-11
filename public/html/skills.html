@@ -20,6 +20,10 @@
 		
 		  ga('create', 'UA-102161142-1', 'auto');
 		  ga('send', 'pageview');
+		  
+		  function outputUpdate(num) {
+             document.querySelector('#output').value = num;
+          }
 
 		</script> 
 
@@ -33,17 +37,18 @@
 			<div>
 
 				<p>Negotiation</p>
-				<input type="range" min="0" max="10" class = "slider" step="0">
+				<input type="range" id="value" value="0" step="10" min="0" max="100">
+				
 			</div>
 			<div>
 
 				<p>Communication</p>
-				<input type="range" min="0" max="10" class = "slider" step="0">
+				<input type="range" id="value" value="0" step="10" min="0" max="100">
 			</div>
 			<div>
 
 				<p>KT - Problem Solving</p>
-				<input type="range" min="0" max="10" class = "slider" step="0">
+				<input type="range" id="value" value="0" step="10" min="0" max="100">
 			</div>
 		</div>
 		<div>
@@ -51,17 +56,17 @@
 			<div>
 
 				<p>Java EE</p>
-				<input type="range" min="0" max="10" class = "slider" step="0">
+				<input type="range" id="value" value="0" step="10" min="0" max="100">
 			</div>
 			<div>
 
 				<p>Node.js</p>
-				<input type="range" min="0" max="10" class = "slider" step="0">
+				<input type="range" id="value" value="0" step="10" min="0" max="100">
 			</div>
 			<div>
 
 				<p>Json</p>
-				<input type="range" min="0" max="10" class = "slider" step="0">
+				<input type="range" id="value" value="0" step="10" min="0" max="100">
 			</div>
 		</div>
 	</div>
