@@ -332,4 +332,11 @@ input[type=range]:focus::-ms-fill-upper {
   background: #E1EBF7;
 }
 
+<<<<<<< Upstream, based on 1247b7d5038b5a732517fb0059c0c588e8335877
 >>>>>>> dfe67ff Input slider styling
+=======
+.slider {
+	
+}
+
+>>>>>>> 29049de input slider styling fix
