@@ -196,8 +196,8 @@ html, body {
 }
 
 .footer-btn {
-    position: absolute;
-    bottom: 110px;
+    position: fixed;
+    bottom: 0px;
     height: 80px;
     background-color: #deedf7;
     margin: auto;
